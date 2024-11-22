@@ -9,11 +9,20 @@
 </head>
 <body>
 	<div id="mainCard">
+    <div id="card">
 	<h1>Welcome to Dashboard</h1>
-	<div id="cards">
-	<h2><a href="AddStudent.jsp">ADD Student Details</a></h2>
-	<h2><a href="display-all-students">DISPLAY Student Details</a></h2>
+	<div id="subcard">
+    <h2>Student Details</h2>
+    <div id="sub">
+    <div id="sub1">
+	<h2><a href="AddStudent.jsp">ADD</a></h2>
+    </div>
+    <div id="sub1">
+    <h2><a href="display-all-students">DISPLAY</a></h2>
+    </div>
+    </div>
 	</div>
+    </div>
 	</div>
 </body>
 </html>

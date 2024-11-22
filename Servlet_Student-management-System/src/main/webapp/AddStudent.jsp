@@ -5,21 +5,29 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
+<link rel="stylesheet" href="AddStudentStyle.css">
 </head>
 <body>
-
-	<h1>Enter Student Details</h1>
+    <div id="maindiv">
+    <div id="divform">
+    <h1>Enter Student Details</h1>
+    <div id="card">
 	<form action="add-student" method="post">
-		<input type="number" placeholder="Enter StudentId" name="studentId">
-		<input type="text" placeholder="Enter StudentName" name="studentName">
-		<input type="number" placeholder="Enter StudentAge" name="studentAge">
-		<input type="text" placeholder="Enter StudentEmail" name="studentEmail">
-		<input type="text" placeholder="Enter StudentCourse" name="studentCourse">
-		<input type="text" placeholder="Enter StudentCity" name="studentCity">
-		<input type="submit" value="SUBMIT">
+		<input type="number" placeholder="Enter StudentId" name="studentId"><br>
+		<input type="text" placeholder="Enter StudentName" name="studentName"><br>
+		<input type="number" placeholder="Enter StudentAge" name="studentAge"><br>
+		<input type="text" placeholder="Enter StudentEmail" name="studentEmail"><br>
+		<input type="text" placeholder="Enter StudentCourse" name="studentCourse"><br>
+		<input type="text" placeholder="Enter StudentCity" name="studentCity"><br>
+        <span id="btn">
+		<input type="submit" value="SUBMIT" id="btn1">
+        <input type="reset" value="RESET" id="btn2">
+        </span>
 
 	</form>
-
+    </div>
+    </div>
+    </div>
 
 </body>
 </html>
