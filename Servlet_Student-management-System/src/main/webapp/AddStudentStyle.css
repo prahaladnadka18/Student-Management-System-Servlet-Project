@@ -1,0 +1,79 @@
+@charset "ISO-8859-1";
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+#maindiv{
+    /* border: 2px solid red; */
+    height: 739px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(32, 32, 144);
+}
+
+#divform{
+     /* border:  2px solid red; */
+     width: 40%; 
+     height: 70%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-evenly;
+     background-color: rgb(216, 211, 211);
+     box-shadow: 2px 2px 2px 2px black;
+}
+
+#card form{
+    /* border:  2px solid rgb(4, 45, 169); */
+    height: 370px;
+    width: 290px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+input{
+    height: 40px;
+    width: 90%;
+    border: 1px solid white;
+    /* border-radius: 5px; */
+    font-size: 18px;
+    text-align: center;
+}
+input:focus::placeholder {
+    color: transparent;
+  }
+
+#btn{
+    /* border:  2px solid rgb(4, 45, 169); */
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#btn1:hover{
+    color: rgb(146, 146, 252);
+    cursor: pointer;
+}
+
+#btn1{
+    width: 100px;
+    border-radius: 15px;
+}
+
+
+#btn2{
+    width: 100px;
+    border-radius: 15px;
+}
+
+#btn2:hover{
+    color: rgb(146, 146, 252);
+    cursor: pointer;
+}

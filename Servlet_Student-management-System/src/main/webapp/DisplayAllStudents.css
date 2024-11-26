@@ -1,0 +1,71 @@
+@charset "ISO-8859-1";
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /* background-color:  rgb(216, 211, 211); */
+    
+}
+
+
+table{
+    border: 2px solid white;
+    width: 1400px;
+    margin-top: 30px;
+}
+
+th{
+    background-color: rgb(32, 32, 144);
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+}
+
+td{
+    padding: 10px;
+    text-align: center;
+    /* border: 2px solid white; */
+    /* border-radius: 20px; */
+}
+
+
+tr:nth-child(odd){
+    background-color: rgb(216, 211, 211);
+}
+tr:nth-child(even){
+    background-color: rgb(240, 236, 236);
+}
+
+tr:hover {background-color: #c3c2f5;}
+
+div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+#btn1{
+    text-decoration: none;
+}
+
+#btn1:hover{
+    cursor: pointer;
+    color: black;
+}
+#go{
+    /* border: 2px solid red; */
+    height: 70px;
+    width: 250px;
+}
+#go h2 a{
+    text-decoration: none;
+    color: black;
+    /* border: 2px solid red; */
+}
+
+#go h2 a:hover{
+    font-size: 30px;
+    transition: all 300ms;
+}
