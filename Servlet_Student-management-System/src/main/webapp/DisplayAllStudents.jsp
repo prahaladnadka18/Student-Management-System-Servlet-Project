@@ -5,14 +5,13 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<link rel="stylesheet" href="DisplayAllStudents.css">
 </head>
 <body>
-
-	<%
-	ResultSet rs = (ResultSet) request.getAttribute("resultset");
-	%>
-	<h1>All Students Details:</h1>
-	<table border="">
+<%ResultSet rs = (ResultSet) request.getAttribute("resultset");%>
+	<div>
+	<h1>All Students Details</h1>
+	<table id="content-table">
 		<tr>
 			<th>StudentId</th>
 			<th>StudentName</th>
@@ -33,17 +32,17 @@
 			<td><%=rs.getInt(4)%></td>
 			<td><%=rs.getString(5)%></td>
 			<td><%=rs.getString(6)%></td>
-			<td><a href="find-by-id?studentId=<%=rs.getInt(1)%>">Update</a></td>
-			<td><a href="delete-student?studentId=<%=rs.getInt(1)%>"">Delete</a></td>
+			<td><a href="find-by-id?studentId=<%=rs.getInt(1)%>" id="btn1">Update</a></td>
+			<td><a href="delete-student?studentId=<%=rs.getInt(1)%>"" id="btn1">Delete</a></td>
 		</tr>
 		<%
 		}
 		%>
-		
 	</table>
-	
-	<h2><a href="index.jsp">Go To DahsBoard</a></h2>
-	
+	<div id="go">
+	<h2><a href="index.jsp">Go To DashBoard</a></h2>
+    </div>
+    </div>
 </body>
 
 </html>
