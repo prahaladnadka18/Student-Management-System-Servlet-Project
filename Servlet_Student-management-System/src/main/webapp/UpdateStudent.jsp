@@ -5,40 +5,40 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Update Student</title>
+<link rel="stylesheet" href="UpdateStudentStyle.css">
 </head>
+
 <body>
 
-	<%
-	ResultSet rs = (ResultSet) request.getAttribute("resultset");
-	rs.next();
-	%>
-
-	<h2>Update Student Details:</h2>
-
+<%ResultSet rs = (ResultSet) request.getAttribute("resultset");
+  rs.next();
+%>
+	<div id="maindiv">
+        <div id="divform">
+        <h1>Update Student Details</h1>
+        <div id="card">
 	<form action="save-update-student" method="post">
-		<h2>
+		
 			<input type="number" value="<%=rs.getInt(1)%>" name="studentId" readonly="readonly">
-		</h2>
-		<h2>
+		
 			<input type="text" value="<%=rs.getString(2)%>" name="studentName">
-		</h2>
-		<h2>
+		
 			<input type="text" value="<%=rs.getString(3)%>" name="studentEmail">
-		</h2>
-		<h2>
+		
 			<input type="number" value="<%=rs.getInt(4)%>" name="studentAge">
-		</h2>
-		<h2>
+		
 			<input type="text" value="<%=rs.getString(5)%>" name="studentCourse">
-		</h2>
-		<h2>
+		
 			<input type="text" value="<%=rs.getString(6)%>" name="studentCity">
-		</h2>
-		<h2>
-			<input type="submit" value="SUBMIT">
-		</h2>
+		
+		
+        <span id="btn">
+            <input type="submit" value="SUBMIT" id="btn1">
+            </span>
 	</form>
-
+</div>
+</div>
+</div>
 </body>
 </html>
